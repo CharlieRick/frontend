@@ -20,5 +20,8 @@
   "homepage": "https://github.com/AMA-engineering/frontend#readme",
   "dependencies": {
     "json-server": "^0.16.2"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.9"
   }
 }

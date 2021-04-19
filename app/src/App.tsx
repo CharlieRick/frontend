@@ -1,23 +1,24 @@
-import React from 'react';
+import React from "react";
+import styled from "styled-components";
+import { SearchBar } from "./components/SearchBar";
+import "./styles/App.scss";
 
-function App() {
+const Container = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h1>Postcode Lookup</h1>
+      <SearchBar />
+    </Container>
   );
-}
+};
 
 export default App;
